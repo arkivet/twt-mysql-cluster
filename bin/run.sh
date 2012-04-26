@@ -1,4 +1,5 @@
 #!/bin/sh
+PATH=$PATH:/opt/mysql/server-5.5/bin
 
 if ndb_mgm --try-reconnect=1 -e show 2>&1 >/dev/null ; then
 	echo "ndb_mgd is already running" >&2
